@@ -30,6 +30,7 @@ static const Rule rules[] = {
 	{ "Gimp",     	NULL,       NULL,       	0,          0,           1,           -1 },
 	{ "Firefox", 	NULL,       NULL,       	0,       	0,           0,            0 },
 	{ NULL,  		NULL,   	"pulsemixer",   0,       	1,           1,           -1 },
+	{ NULL,  		NULL,   	"htop",   		0,       	1,           1,           -1 },
 };
 
 /* layout(s) */
@@ -60,10 +61,23 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+static const char *browsercmd[]  = { "firefox", NULL };
+static const char *mailcmd[]  = { "thunderbird", NULL };
+static const char *filescmd[]  = { "nautilus", NULL };
+static const char *mixercmd[]  = { "st-pulsemixer", NULL };
+static const char *calccmd[]  = { "gnome-calculator", NULL };
+static const char *taskmgrcmd[]  = { "st-htop", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ Mod4Mask,             		XK_1,      spawn,          {.v = browsercmd } },
+	{ Mod4Mask,             		XK_2,      spawn,          {.v = mailcmd } },
+	{ Mod4Mask,             		XK_e,      spawn,          {.v = filescmd } },
+	{ Mod4Mask,             		XK_m,      spawn,          {.v = mixercmd } },
+	{ Mod4Mask,             		XK_c,      spawn,          {.v = calccmd } },
+	{ Mod4Mask,             		XK_t,      spawn,          {.v = taskmgrcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
