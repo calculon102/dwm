@@ -31,6 +31,7 @@ static const Rule rules[] = {
 	{ "Firefox", 	NULL,       NULL,       	0,       	0,           0,            0 },
 	{ NULL,  		NULL,   	"pulsemixer",   0,       	1,           1,           -1 },
 	{ NULL,  		NULL,   	"htop",   		0,       	1,           1,           -1 },
+	{ "xfreerdp", 	NULL,   	NULL,   		0,       	0,           1,            0 },
 };
 
 /* layout(s) */
