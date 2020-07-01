@@ -9,6 +9,8 @@ This is my personal setup (technically fork) of [dwm](https://dwm.suckless.org).
 * Patched [center](https://dwm.suckless.org/patches/center/) and set pulsemixer to start centered
 * Set font to Hack
 * Added keybindings to favorite applications
+* Altered color-scheme to palette <https://colorhunt.co/palette/177052> - without pink
+* Set border width to 3px
 
 ## TODOs
 
@@ -16,5 +18,4 @@ This is my personal setup (technically fork) of [dwm](https://dwm.suckless.org).
 	* suspend
 	* shutdown
 * Checkout scratchpad
-* Alter dwm colors and borders
 
