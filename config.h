@@ -67,6 +67,7 @@ static const char *filescmd[]  = { "nautilus", NULL };
 static const char *mixercmd[]  = { "st-pulsemixer", NULL };
 static const char *calccmd[]  = { "gnome-calculator", NULL };
 static const char *taskmgrcmd[]  = { "st-htop", NULL };
+static const char *lockcmd[]  = { "st-slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -78,6 +79,7 @@ static Key keys[] = {
 	{ Mod4Mask,             		XK_m,      spawn,          {.v = mixercmd } },
 	{ Mod4Mask,             		XK_c,      spawn,          {.v = calccmd } },
 	{ Mod4Mask,             		XK_t,      spawn,          {.v = taskmgrcmd } },
+	{ Mod4Mask,             		XK_l,      spawn,          {.v = lockcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
