@@ -67,11 +67,12 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const char *browsercmd[]  = { "firefox", NULL };
 static const char *mailcmd[]  = { "thunderbird", NULL };
-static const char *filescmd[]  = { "nautilus", NULL };
-static const char *mixercmd[]  = { "dwm-pulsemixer", NULL };
+static const char *filescmd[]  = { "st", "ranger", NULL };
+static const char *mixercmd[]  = { "st", "pulsemixer", NULL };
 static const char *calccmd[]  = { "gnome-calculator", NULL };
-static const char *taskmgrcmd[]  = { "dwm-htop", NULL };
+static const char *taskmgrcmd[]  = { "st","htop", NULL };
 static const char *lockcmd[]  = { "dwm-slock", NULL };
+static const char *shutdowncmd[]  = { "st", "shutdown", "now", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -84,6 +85,7 @@ static Key keys[] = {
 	{ Mod4Mask,             		XK_c,      spawn,          {.v = calccmd } },
 	{ Mod4Mask,             		XK_t,      spawn,          {.v = taskmgrcmd } },
 	{ Mod4Mask,             		XK_l,      spawn,          {.v = lockcmd } },
+	{ Mod4Mask|ShiftMask,      		XK_h,      spawn,          {.v = shutdowncmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
