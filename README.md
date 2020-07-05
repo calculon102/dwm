@@ -1,6 +1,6 @@
-# My dwm-setup
+# My dwm
 
-This is my personal setup (technically fork) of [dwm](https://dwm.suckless.org).
+My configured and patched version of [dwm](https://dwm.suckless.org).
 
 ## Changes
 
@@ -8,13 +8,12 @@ This is my personal setup (technically fork) of [dwm](https://dwm.suckless.org).
 * Patched [noborder](https://dwm.suckless.org/patches/noborder/)
 * Patched [center](https://dwm.suckless.org/patches/center/) and set pulsemixer to start centered
 * Set font to Hack
-* Added keybindings to favorite applications and lock-screen
+* Added keybindings to favorite applications, lock-screen and shutdown
 * Altered color-scheme to palette <https://colorhunt.co/palette/177052> - without pink
 * Set border width to 3px
 
-## TODOs
+## Further ideas
 
 * Bind keys to actions
 	* suspend
-	* shutdown
 
