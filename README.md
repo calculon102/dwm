@@ -17,5 +17,4 @@ This is my personal setup (technically fork) of [dwm](https://dwm.suckless.org).
 * Bind keys to actions
 	* suspend
 	* shutdown
-* Checkout scratchpad
 
