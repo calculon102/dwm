@@ -1,2 +1,0 @@
-#!/bin/bash
-st slock -m "$(cowsay "$(fortune)")"
