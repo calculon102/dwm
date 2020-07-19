@@ -11,7 +11,8 @@ My configured and patched version of [dwm](https://dwm.suckless.org).
 * Added keybindings to favorite applications, lock-screen and shutdown
 * Altered color-scheme to palette <https://colorhunt.co/palette/177052> - without pink
 * Set border width to 3px
-* Added xsessions-file, for offering dwm as option at login in display-managers
+* Patched [uselessgap](http://dwm.suckless.org/patches/uselessgap/)
+* Patched [alpha](https://dwm.suckless.org/patches/uselessgap/)
 
 ## Further ideas
 
