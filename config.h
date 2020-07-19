@@ -16,10 +16,18 @@ static const char col_yellow[]      = "#ffac41";
 static const char col_gray[]    = "#323232";
 static const char col_black[]       = "#000000";
 
+static const unsigned int baralpha = 0xd0;
+static const unsigned int borderalpha = OPAQUE;
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_white, col_black, col_black },
 	[SchemeSel]  = { col_yellow, col_gray,  col_pink  },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
